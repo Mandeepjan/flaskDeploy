@@ -1,0 +1,91 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set a background color for the entire page */
+body {
+    background-color: #f5f5f5;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Style the container */
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+}
+
+/* Style the landing content */
+.landing-content {
+    margin-bottom: 20px;
+}
+
+/* Style the heading */
+.signin {
+    color: #333;
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+/* Style the form input containers */
+.input-container {
+    margin-bottom: 0 auto;
+    text-align: left;
+    
+}
+
+.input-container label {
+    color: #333;
+    
+}
+
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 5px;
+   
+}
+
+/* Style the Sign In button */
+button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+/* Style the "Don't have an account?" link */
+.newAccount {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+/* Style the footer */
+footer {
+    margin-top: 20px;
+    color: #333;
+    font-size: 12px;
+}

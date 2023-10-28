@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{  url_for('static', filename = 'css/dashboard.css'  )}}">
+
+    <title>Dashboard</title>
+</head>
+<body>
+    <div class="nav-bar">
+        <div >Welcome !</div>
+            <div >Contact App Dashboard</div>
+            <a href="{{  url_for('logout')}}">Logout</a>
+    </div>
+   
+    <div class="content">
+        <div class="content-list">
+            {% for contact in contact_data %}
+                    <a href="/dashboard_contact/{{  contact[0]  }}" target="" rel=""><li>{{ contact[2]  }}</li></a>
+
+            {%  endfor  %}
+         </div>
+        <div class="content-details">
+            <a href="{{  url_for('dashboard_add')}}">Add contact</a>
+                <a href="/update/{{ data[0][0] }}">Update</a>
+                <a href="/delete/{{ data[0][0] }}">Delete</a>
+                <a href="{{  url_for('dashboard')}}">Go Back</a>
+            
+        </div>
+        
+        
+</div>
+</body>
+</html>
+
